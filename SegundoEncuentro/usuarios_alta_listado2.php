@@ -28,6 +28,8 @@
         <h2>Unidad 3: AÑADIR y LISTAR registros a una base de datos</h2>
         <h3>Añade un Nuevo Usuario</h3>
         <?php
+            //DAMOS DE ALTA UN USUARIO (INSERTAMOS SUS DATOS EN LA BD) Y MOSTRAMOS UN LISTADO DE USUARIO
+
             // Inserto el código del archivo conxiondb_agenda que tiene la conexión a la base de datos
             require('conexiondb_agenda.php');
 

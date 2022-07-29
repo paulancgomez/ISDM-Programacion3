@@ -1,8 +1,12 @@
 <?php
+    //CODIGO PHP
+
     // Inserto el código del archivo conexiondb_agenda que tiene la conexión a la base de datos
     require('conexiondb_agenda.php');
 
-    // si el formulario ha sido enviado procesa los datos del formulario                        
+    // si el formulario ha sido enviado procesa los datos del formulario
+    
+    //BUSCAR
     if (isset($_GET['nBuscar'])) 
     {
         $idUsuario = $_GET["nIdUsuario"];
@@ -23,6 +27,7 @@
             echo "Usuario NO Encontrado !!. </br>";
     }
     else
+        //MODIFICAR
         if (isset($_GET['nModificar'])) 
         {
         $idUsuario = $_GET["nIdUsuario"];
@@ -45,6 +50,7 @@
             echo "Usuario no encontrado!";
         }
         else
+            //ELIMINAR
             if (isset($_GET['nEliminar'])) 
             {
             $idUsuario = $_GET["nIdUsuario"];

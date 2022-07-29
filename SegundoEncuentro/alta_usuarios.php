@@ -17,6 +17,8 @@
         <h2>Unidad 3: Añadir registros a una base de datos</h2>
         <h3>Añade un Nuevo Usuario</h3>
         <?php
+            //REGISTRA UN USUARIO E INSERTA SUS DATOS EN LA BD
+
             // Inserto el código del archivo conxiondb_agenda que tiene la conexión a la base de datos
             require('conexiondb_agenda.php');
 
@@ -65,12 +67,12 @@
                     } else {
                         echo "ERROR: No fue posible ejecutar la consulta: $sql. " . $conexionDB->error;
                     }
+                }
+                // cierra bloque de mensaje
+                echo '</div>';  
+                // cierra conexión
+                $conexionDB->close();
             }
-            // cierra bloque de mensaje
-            echo '</div>';  
-            // cierra conexión
-            $conexionDB->close();
-        }
         ?>
         </div>
         <form action="alta_usuarios.php" method="POST">

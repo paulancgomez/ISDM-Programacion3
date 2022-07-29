@@ -2,7 +2,7 @@
 
     try
     {
-        $conexionDB = new mysqli("localhost", "root", "password", "drugstore");
+        $conexionDB = new mysqli("localhost", "root", "password", "drugstore", 3306);
         if ($conexionDB->connect_error)
             {
                 die("Ocurrió un error al conectar la base de datos!");

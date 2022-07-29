@@ -2,7 +2,7 @@
 
     try
     {
-        $conexionDB = new mysqli("localhost", "root", "rootroot", "drugstore", 8080);
+        $conexionDB = new mysqli("localhost", "root", "password", "drugstore");
         if ($conexionDB->connect_error)
             {
                 die("Ocurrió un error al conectar la base de datos!");
@@ -25,7 +25,7 @@
             {
                 while ($fila = $queryArt->fetch_array())
                 {
-                    echo "Detalle: " . $fila[0] . "</br>";
+                    echo "Detalle: " . $fila[1] . "</br>";
                 }
             }
             $queryArt->free_result();

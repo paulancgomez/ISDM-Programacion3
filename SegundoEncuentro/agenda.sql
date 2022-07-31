@@ -37,5 +37,21 @@ CREATE TABLE ventas_item(
     Precio DOUBLE
 );
 
+DROP TABLE IF EXISTS ventas_item;
+
+CREATE TABLE articulos(
+	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    stockactual INT(10) NOT NULL,
+	precio DOUBLE NOT NULL
+);
+
+INSERT INTO articulos(nombre, stockactual, precio)
+VALUES ('Yerba Mate Amanda 500 gr', 15, 200),
+	   ('Edulcorante 200 cc', 45, 100),
+       ('Coca Cola 1,5 L', 35, 240),
+       ('Fanta Naranja 1,5 L', 20, 200);
+
 SELECT * FROM ventas_enca;
 SELECT * FROM ventas_item;
+SELECT * FROM articulos;

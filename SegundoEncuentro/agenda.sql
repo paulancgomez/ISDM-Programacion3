@@ -37,10 +37,10 @@ CREATE TABLE ventas_item(
     Precio DOUBLE
 );
 
-DROP TABLE IF EXISTS ventas_item;
+DROP TABLE IF EXISTS articulos;
 
 CREATE TABLE articulos(
-	id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	idarticulo INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     stockactual INT(10) NOT NULL,
 	precio DOUBLE NOT NULL

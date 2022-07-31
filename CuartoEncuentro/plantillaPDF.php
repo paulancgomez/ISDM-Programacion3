@@ -3,17 +3,19 @@
 
     class MiPDF extends FPDF
     {
+        //CABECERA
         function Header()
         {
         $this->Image('logo.png',5,5,30);
         $this->SetFont('Arial','B',16);
         $this->Cell(30);
         $this->Cell(120,10,'LISTADO GENERAL',0,0,'C');
-                //   x   y    texto    salto de línea      C centrado
+                //   x   y    texto   borde  salto de línea      C centrado
         $this->Ln(20);
                 // Salto de línea de 20 puntos
         }
 
+        //PIE DE PAGINA
         function footer()
         {
         $this->SetY(-15);
